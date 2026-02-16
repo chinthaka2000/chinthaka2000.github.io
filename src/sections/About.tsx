@@ -35,7 +35,7 @@ export default function About() {
               I’m passionate about designing and building <span className="text-white font-semibold">end-to-end machine learning systems</span> that create real-world impact. My focus goes beyond model development — I work across the full ML lifecycle, from data and experimentation to deployment, monitoring, and continuous improvement.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              I’m particularly interested in the intersection of <span className="text-acid-lime">AI, Machine Learning, MLOps, and scalable system design</span>, where intelligent models are transformed into reliable, production-ready solutions aligned with business goals.
+              I’m particularly interested in the intersection of <span className="text-acid-lime">Artificial Intelligence, Machine Learning, MLOps, and scalable system design</span>, where intelligent models are transformed into reliable, production-ready solutions aligned with business goals.
             </p>
 
             <div className="mb-6">
@@ -103,7 +103,7 @@ export default function About() {
           >
             <Brain className="text-acid-lime w-8 h-8 mb-4" />
             <h3 className="text-xl font-bold mb-2">Interests</h3>
-            <p className="text-gray-400 text-sm">3D Web Design, Robotics, Automated Trading Systems</p>
+            <p className="text-gray-400 text-sm">End-to-End Business Aligned Systems, MLOps, Scalable AI Infrastructure</p>
           </motion.div>
 
           {/* 5. Location/Status - Small Card */}

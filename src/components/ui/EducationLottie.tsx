@@ -1,6 +1,6 @@
 "use client";
 
-import { DotLottieReact } from '@lottiefiles/dotlottie-react/dist/index.js';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { motion } from "framer-motion";
 
 export default function EducationLottie() {

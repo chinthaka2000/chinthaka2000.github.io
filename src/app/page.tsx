@@ -51,7 +51,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 className="text-left"
               >
-                <h1 className="text-6xl md:text-7xl font-bold font-mono tracking-tighter mb-4 text-white mt-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                <h1 className="text-4xl md:text-7xl font-bold font-mono tracking-tighter mb-4 text-white mt-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                   CHINTHAKA
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
@@ -64,7 +64,7 @@ export default function Home() {
                     className=""
                   />
                 </p>
-                <div className="flex flex-col md:flex-row gap-4 items-center mt-10">
+                <div className="flex flex-col md:flex-row gap-4 items-center mt-0 md:mt-2">
                   <div className="w-56 px-6 py-2 border border-white/20 rounded-full backdrop-blur-md bg-white/5 flex items-center justify-center">
                     <span className="w-2 h-2 rounded-full bg-green-500 inline-block mr-3 animate-pulse"></span>
                     <span className="text-sm font-mono tracking-widest">SYSTEM ONLINE</span>
@@ -73,7 +73,7 @@ export default function Home() {
                   <a
                     href="/skill.md"
                     download
-                    className="w-32 flex items-center justify-center gap-2 px-6 py-2 border border-acid-lime text-acid-lime rounded-full hover:bg-acid-lime/10 transition-colors uppercase font-mono tracking-widest text-sm group"
+                    className="w-32 flex items-center justify-center gap-2 px-6 py-2 border border-acid-lime text-acid-lime rounded-full hover:bg-acid-lime/10 transition-colors uppercase font-mono tracking-widest text-sm group -translate-y-[2px] md:translate-y-0"
                   >
                     <Download className="w-4 h-4 group-hover:animate-bounce" />
                     SKILL.md
@@ -86,7 +86,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="hidden md:flex justify-end"
+                className="flex justify-center md:justify-end order-first md:order-last mt-10 md:mt-0"
               >
                 <HeroImage />
               </motion.div>

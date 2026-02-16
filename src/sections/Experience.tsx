@@ -106,24 +106,25 @@ export default function Experience() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <AnimatePresence>
               {visibleCertifications.map((cert, index) => (
-                <motion.a
+                <motion.div
                   key={cert.id}
-                  href={cert.url}
-                  target="_blank"
                   initial={{ opacity: 0, height: 0 }}
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ delay: index * 0.05 }}
-                  className="flex items-center justify-between bg-black/40 border border-white/10 p-4 rounded-xl hover:bg-white/5 hover:border-acid-lime/30 transition-all group overflow-hidden"
+                  className="flex items-center justify-between bg-black/40 border border-white/10 p-5 rounded-xl hover:bg-white/5 hover:border-acid-lime/30 transition-all group overflow-hidden"
                 >
-                  <div className="pr-4">
-                    <h4 className="font-bold text-white text-sm group-hover:text-acid-lime transition-colors line-clamp-1" title={cert.name}>
+                  <div className="w-full">
+                    <h4 className="font-bold text-white text-base mb-1" title={cert.name}>
                       {cert.name}
                     </h4>
-                    <p className="text-xs text-gray-500 mt-1">{cert.issuer} • {cert.date}</p>
+                    <p className="text-sm text-gray-500">
+                      <span className="text-acid-lime font-mono block sm:inline sm:mr-2">{cert.issuer}</span>
+                      <span className="hidden sm:inline">•</span>
+                      <span className="block sm:inline sm:ml-2">{cert.date}</span>
+                    </p>
                   </div>
-                  <ExternalLinkIcon className="text-gray-600 group-hover:text-acid-lime transition-colors w-4 h-4 flex-shrink-0" />
-                </motion.a>
+                </motion.div>
               ))}
             </AnimatePresence>
           </div>
