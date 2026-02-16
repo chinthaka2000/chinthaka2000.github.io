@@ -23,7 +23,7 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#home"
-          className="text-xl font-bold font-mono tracking-tighter hover:text-acid-lime transition-colors flex items-center gap-2"
+          className="text-2xl font-bold font-mono tracking-tighter hover:text-acid-lime transition-colors flex items-center gap-2"
         >
           CHINTHAKA2000<span className="text-acid-lime">.github.io</span>
         </a>
