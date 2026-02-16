@@ -28,7 +28,7 @@ export default function HeroImage() {
         // ADJUST HERE:
         // w-[440px] -> Width of image (matches circle width now)
         // h-[920px] -> Height of image container
-        className="relative z-10 w-[440px] h-[920px] -top-20 rounded-full overflow-hidden"
+        className="relative z-10 w-[440px] h-[720px] top-6 rounded-full overflow-hidden"
       >
         <img
           src="/me.png"
