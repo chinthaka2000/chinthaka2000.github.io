@@ -1,12 +1,18 @@
+```javascript
 "use client";
 
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { experience, education, certifications } from "@/data/experience";
-import { Briefcase, Calendar, Award, GraduationCap } from "lucide-react";
+import { Briefcase, Calendar, Award, GraduationCap, ChevronDown, ChevronUp } from "lucide-react";
 
 import EducationLottie from "@/components/ui/EducationLottie";
 
 export default function Experience() {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const initialCount = 6;
+  const visibleCertifications = isExpanded ? certifications : certifications.slice(0, initialCount);
+
   return (
     <section id="experience" className="min-h-screen py-24 bg-zinc-900 border-t border-white/10 relative">
       <div className="container mx-auto px-6">
@@ -99,27 +105,45 @@ export default function Experience() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {certifications.map((cert, index) => (
-              <motion.a
-                key={cert.id}
-                href={cert.url}
-                target="_blank"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.05 }}
-                viewport={{ once: true }}
-                className="flex items-center justify-between bg-black/40 border border-white/10 p-4 rounded-xl hover:bg-white/5 hover:border-acid-lime/30 transition-all group"
-              >
-                <div className="pr-4">
-                  <h4 className="font-bold text-white text-sm group-hover:text-acid-lime transition-colors line-clamp-1" title={cert.name}>
-                    {cert.name}
-                  </h4>
-                  <p className="text-xs text-gray-500 mt-1">{cert.issuer} • {cert.date}</p>
-                </div>
-                <ExternalLinkIcon className="text-gray-600 group-hover:text-acid-lime transition-colors w-4 h-4 flex-shrink-0" />
-              </motion.a>
-            ))}
+            <AnimatePresence>
+              {visibleCertifications.map((cert, index) => (
+                <motion.a
+                  key={cert.id}
+                  href={cert.url}
+                  target="_blank"
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ delay: index * 0.05 }}
+                  className="flex items-center justify-between bg-black/40 border border-white/10 p-4 rounded-xl hover:bg-white/5 hover:border-acid-lime/30 transition-all group overflow-hidden"
+                >
+                  <div className="pr-4">
+                    <h4 className="font-bold text-white text-sm group-hover:text-acid-lime transition-colors line-clamp-1" title={cert.name}>
+                      {cert.name}
+                    </h4>
+                    <p className="text-xs text-gray-500 mt-1">{cert.issuer} • {cert.date}</p>
+                  </div>
+                  <ExternalLinkIcon className="text-gray-600 group-hover:text-acid-lime transition-colors w-4 h-4 flex-shrink-0" />
+                </motion.a>
+              ))}
+            </AnimatePresence>
           </div>
+
+          {/* Show More / Show Less Button */}
+          {certifications.length > initialCount && (
+            <div className="flex justify-center mt-8">
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="flex items-center gap-2 text-acid-lime font-mono text-sm border border-acid-lime/30 px-6 py-2 rounded-full hover:bg-acid-lime/10 transition-colors"
+              >
+                {isExpanded ? (
+                  <>Show Less <ChevronUp size={16} /></>
+                ) : (
+                  <>Show More ({certifications.length - initialCount} remaining) <ChevronDown size={16} /></>
+                )}
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
