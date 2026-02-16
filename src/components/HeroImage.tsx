@@ -33,7 +33,15 @@ export default function HeroImage() {
         <img
           src="/me.png"
           alt="Chinthaka Bandaranayake"
-          className="w-full h-full object-cover object-top"
+          width={440}
+          height={720}
+          className="w-full h-full object-cover object-top filter contrast-125 brightness-110 drop-shadow-2xl translate-x-4"
+          style={{
+            maskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, black 80%, transparent 100%)'
+          }}
+          loading="eager"
+          decoding="sync"
         />
       </motion.div>
     </div>
