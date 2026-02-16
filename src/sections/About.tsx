@@ -32,11 +32,29 @@ export default function About() {
               <h3 className="text-2xl font-bold">The Developer</h3>
             </div>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              I am a <span className="text-white font-semibold">Machine Learning Engineer</span> and <span className="text-white font-semibold">MLOps Practitioner</span> with a passion for building scalable AI systems.
-              My journey began with a curiosity for how machines learn, which evolved into a deep dive into neural networks, distributed computing, and production-grade pipelines.
+              I’m passionate about designing and building <span className="text-white font-semibold">end-to-end machine learning systems</span> that create real-world impact. My focus goes beyond model development — I work across the full ML lifecycle, from data and experimentation to deployment, monitoring, and continuous improvement.
             </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              Currently, I focus on bridging the gap between experimental models and reliable, deployed applications. I love dealing with the complexities of model orchestration, data drift, and latency optimization.
+            <p className="text-lg text-gray-300 leading-relaxed mb-6">
+              I’m particularly interested in the intersection of <span className="text-acid-lime">AI, Machine Learning, MLOps, and scalable system design</span>, where intelligent models are transformed into reliable, production-ready solutions aligned with business goals.
+            </p>
+
+            <div className="mb-6">
+              <p className="text-lg text-gray-300 mb-3">I enjoy approaching ML as an engineering discipline, with an emphasis on:</p>
+              <div className="flex flex-wrap gap-2">
+                {['Reproducibility', 'Scalability', 'Automation', 'Performance Measurement', 'Maintainability'].map(item => (
+                  <span key={item} className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-sm text-acid-lime font-mono">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <p className="text-lg text-gray-300 leading-relaxed mb-6">
+              I’m continuously exploring better ways to move from experimentation to production and to build robust, data-driven systems that deliver measurable value.
+            </p>
+
+            <p className="text-lg text-gray-300 leading-relaxed italic border-l-2 border-acid-lime pl-4">
+              I’m always open to collaborating on innovative projects, contributing to real-world ML applications, and connecting with people who are working on production ML, MLOps, and applied AI solutions.
             </p>
           </motion.div>
 

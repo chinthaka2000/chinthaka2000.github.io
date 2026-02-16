@@ -14,6 +14,8 @@ import Contact from '@/sections/Contact';
 import Experience from '@/sections/Experience';
 import LottieBackground from '@/components/ui/LottieBackground';
 
+import Preloader from '@/components/ui/Preloader';
+
 // Dynamic import for 3D Scene
 const RoboScene = dynamic(() => import('@/components/3d/RoboScene'), { ssr: false });
 const HeroImage = dynamic(() => import('@/components/HeroImage'), { ssr: false });
@@ -25,6 +27,7 @@ export default function Home() {
 
   return (
     <div className="relative bg-black text-white selection:bg-acid-lime selection:text-black">
+      <Preloader />
       {/* 1. Persistent 3D Background (Fixed) */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <RoboScene />

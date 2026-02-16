@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { experience, education, certifications } from "@/data/experience";
 import { Briefcase, Calendar, Award, GraduationCap } from "lucide-react";
 
+import EducationLottie from "@/components/ui/EducationLottie";
+
 export default function Experience() {
   return (
     <section id="experience" className="min-h-screen py-24 bg-zinc-900 border-t border-white/10 relative">
@@ -82,6 +84,9 @@ export default function Experience() {
                 </motion.div>
               ))}
             </div>
+
+            {/* LOTTIE ANIMATION */}
+            <EducationLottie />
           </div>
 
         </div>
