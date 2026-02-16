@@ -33,7 +33,7 @@ export default function Contact() {
           Get In Touch
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 bg-gray-900/50 p-8 rounded-2xl border border-gray-800 backdrop-blur-sm">
+        <div className="grid md:grid-cols-2 gap-12 bg-gray-900/50 p-4 md:p-8 rounded-2xl border border-gray-800 backdrop-blur-sm">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold">Let's Connect</h3>
             <p className="text-gray-400">
@@ -43,14 +43,14 @@ export default function Contact() {
             <div className="space-y-6 mt-8">
               <a
                 href="mailto:smartchinthaka512@gmail.com"
-                className="flex items-center gap-4 text-gray-300 hover:text-acid-lime transition-colors group p-4 bg-white/5 rounded-xl border border-white/10 hover:border-acid-lime/30"
+                className="flex items-center gap-4 text-gray-300 hover:text-acid-lime transition-colors group p-3 md:p-4 bg-white/5 rounded-xl border border-white/10 hover:border-acid-lime/30"
               >
-                <div className="p-3 bg-zinc-900 rounded-lg group-hover:bg-acid-lime/10 transition-colors">
+                <div className="p-3 bg-zinc-900 rounded-lg group-hover:bg-acid-lime/10 transition-colors shrink-0">
                   <Mail className="w-6 h-6 text-acid-lime" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs text-gray-500 font-mono mb-1">Email</p>
-                  <p className="font-bold">smartchinthaka512@gmail.com</p>
+                  <p className="font-bold break-all">smartchinthaka512@gmail.com</p>
                 </div>
               </a>
 
@@ -58,14 +58,14 @@ export default function Contact() {
                 href="https://www.linkedin.com/in/chinthaka-bandaranayake/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-gray-300 hover:text-acid-lime transition-colors group p-4 bg-white/5 rounded-xl border border-white/10 hover:border-acid-lime/30"
+                className="flex items-center gap-4 text-gray-300 hover:text-acid-lime transition-colors group p-3 md:p-4 bg-white/5 rounded-xl border border-white/10 hover:border-acid-lime/30"
               >
-                <div className="p-3 bg-zinc-900 rounded-lg group-hover:bg-acid-lime/10 transition-colors">
+                <div className="p-3 bg-zinc-900 rounded-lg group-hover:bg-acid-lime/10 transition-colors shrink-0">
                   <Linkedin className="w-6 h-6 text-acid-lime" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs text-gray-500 font-mono mb-1">LinkedIn</p>
-                  <p className="font-bold">chinthaka-bandaranayake</p>
+                  <p className="font-bold break-all">chinthaka-bandaranayake</p>
                 </div>
               </a>
 
@@ -73,14 +73,14 @@ export default function Contact() {
                 href="https://github.com/chinthaka2000"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-4 text-gray-300 hover:text-acid-lime transition-colors group p-4 bg-white/5 rounded-xl border border-white/10 hover:border-acid-lime/30"
+                className="flex items-center gap-4 text-gray-300 hover:text-acid-lime transition-colors group p-3 md:p-4 bg-white/5 rounded-xl border border-white/10 hover:border-acid-lime/30"
               >
-                <div className="p-3 bg-zinc-900 rounded-lg group-hover:bg-acid-lime/10 transition-colors">
+                <div className="p-3 bg-zinc-900 rounded-lg group-hover:bg-acid-lime/10 transition-colors shrink-0">
                   <Github className="w-6 h-6 text-acid-lime" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs text-gray-500 font-mono mb-1">GitHub</p>
-                  <p className="font-bold">chinthaka2000</p>
+                  <p className="font-bold break-all">chinthaka2000</p>
                 </div>
               </a>
             </div>
