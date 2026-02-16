@@ -86,7 +86,8 @@ export default function Skills3D() {
   return (
     <div className="h-[600px] w-full cursor-grab active:cursor-grabbing relative z-10">
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 50 }}>
-        <fog attach="fog" args={['#111116', 0, 80]} />
+        <color attach="background" args={['#050505']} />
+        <fog attach="fog" args={['#050505', 0, 80]} />
         <ambientLight intensity={1} />
         <pointLight position={[10, 10, 10]} intensity={1} />
         <Cloud words={skills} />

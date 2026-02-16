@@ -65,7 +65,7 @@ export default function Home() {
                   />
                 </p>
                 <div className="flex flex-col md:flex-row gap-4 items-center mt-10">
-                  <div className="w-64 px-6 py-2 border border-white/20 rounded-full backdrop-blur-md bg-white/5 flex items-center justify-center">
+                  <div className="w-56 px-6 py-2 border border-white/20 rounded-full backdrop-blur-md bg-white/5 flex items-center justify-center">
                     <span className="w-2 h-2 rounded-full bg-green-500 inline-block mr-3 animate-pulse"></span>
                     <span className="text-sm font-mono tracking-widest">SYSTEM ONLINE</span>
                   </div>
@@ -73,7 +73,7 @@ export default function Home() {
                   <a
                     href="/skill.md"
                     download
-                    className="w-64 flex items-center justify-center gap-2 px-6 py-2 border border-acid-lime text-acid-lime rounded-full hover:bg-acid-lime/10 transition-colors uppercase font-mono tracking-widest text-sm group"
+                    className="w-32 flex items-center justify-center gap-2 px-6 py-2 border border-acid-lime text-acid-lime rounded-full hover:bg-acid-lime/10 transition-colors uppercase font-mono tracking-widest text-sm group"
                   >
                     <Download className="w-4 h-4 group-hover:animate-bounce" />
                     SKILL.md
