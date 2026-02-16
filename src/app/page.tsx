@@ -64,7 +64,7 @@ export default function Home() {
                     className=""
                   />
                 </p>
-                <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
+                <div className="flex flex-col md:flex-row gap-4 items-start md:items-center mt-8">
                   <div className="inline-block px-6 py-2 border border-white/20 rounded-full backdrop-blur-md bg-white/5">
                     <span className="w-2 h-2 rounded-full bg-green-500 inline-block mr-2 animate-pulse"></span>
                     SYSTEM STATUS: ONLINE
