@@ -2,7 +2,7 @@
 
 import { useMemo, useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Text, TrackballControls, Float, OrbitControls } from "@react-three/drei";
+import { Text, TrackballControls, Float, OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 
 function Word({ children, position }: { children: string; position: THREE.Vector3 }) {
