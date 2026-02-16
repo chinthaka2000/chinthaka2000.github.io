@@ -1,6 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website 🚀
 
-## Getting Started
+Welcome to my personal portfolio website, built with modern web technologies to showcase my projects, skills, and experience. This project leverages **Next.js 16**, **React 19**, and interactive **3D elements** to create an engaging user experience.
+
+🔗 **Live Demo:** [https://chinthaka2000.github.io](https://chinthaka2000.github.io)
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js 16 (App Router)](https://nextjs.org/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **3D Graphics:** [Three.js](https://threejs.org/) & [React Three Fiber](https://docs.pmnd.rs/react-three-fiber)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Linting:** ESLint
+
+## ✨ Key Features
+
+- **Interactive 3D Elements:** Custom 3D scenes including a hero robot and skill visualization.
+- **Responsive Design:** Fully responsive layout optimized for mobile, tablet, and desktop.
+- **MLOps Integration:** dedicated section showcasing machine learning operations expertise.
+- **Performance Optimized:** Utilizing Next.js best practices for speed and SEO.
+- **Dark Mode Aesthetic:** modern, sleek UI design.
+
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -10,27 +32,29 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app`: App Router pages and layouts.
+- `src/components`: Reusable UI components (Preloader, Navbar, Footer, etc.).
+- `src/components/3d`: Three.js scenes and canvas components.
+- `src/sections`: Main content sections (Hero, About, Experience, Projects, Contact).
+- `src/context`: React context providers (e.g., Navigation).
+- `public`: Static assets (images, models).
 
-## Learn More
+## 📦 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is configured for deployment on **GitHub Pages**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To build for production:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open source and available under the [MIT License](LICENSE).
