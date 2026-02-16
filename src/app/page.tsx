@@ -38,7 +38,7 @@ export default function Home() {
 
         {/* HERO SECTION */}
         <section id="home" className="h-screen w-full relative flex items-center justify-center overflow-hidden bg-black">
-          <LottieBackground animationPath="/hero-bg.json" className="opacity-60 absolute inset-0 z-0" />
+          <LottieBackground animationPath="/hero-bg.json" className="opacity-60 absolute inset-0 z-0 -translate-y-12 scale-110" />
           <div className="container mx-auto px-6 relative z-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Left Text */}
