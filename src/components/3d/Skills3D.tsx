@@ -88,10 +88,18 @@ export default function Skills3D() {
       <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 35], fov: 50 }}>
         <color attach="background" args={['#050505']} />
         <fog attach="fog" args={['#050505', 0, 80]} />
+
+        {/* Ambient environment */}
         <ambientLight intensity={1} />
         <pointLight position={[10, 10, 10]} intensity={1} />
+
+        {/* Stars for background depth */}
+        <Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
+
         <Cloud words={skills} />
-        <TrackballControls rotateSpeed={2} zoomSpeed={0.5} />
+
+        {/* Auto-rotating controls */}
+        <OrbitControls autoRotate autoRotateSpeed={0.5} enableZoom={false} />
       </Canvas>
     </div>
   );
