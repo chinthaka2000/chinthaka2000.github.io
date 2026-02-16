@@ -51,7 +51,7 @@ export default function Home() {
                 transition={{ duration: 0.8 }}
                 className="text-left"
               >
-                <h1 className="text-6xl md:text-8xl font-bold font-mono tracking-tighter mb-4 text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                <h1 className="text-6xl md:text-7xl font-bold font-mono tracking-tighter mb-4 text-white mt-10 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                   CHINTHAKA
                   <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
@@ -64,16 +64,16 @@ export default function Home() {
                     className=""
                   />
                 </p>
-                <div className="flex flex-col md:flex-row gap-4 items-start md:items-center mt-8">
-                  <div className="inline-block px-6 py-2 border border-white/20 rounded-full backdrop-blur-md bg-white/5">
-                    <span className="w-2 h-2 rounded-full bg-green-500 inline-block mr-2 animate-pulse"></span>
-                    SYSTEM STATUS: ONLINE
+                <div className="flex flex-col md:flex-row gap-4 items-center mt-10">
+                  <div className="w-64 px-6 py-2 border border-white/20 rounded-full backdrop-blur-md bg-white/5 flex items-center justify-center">
+                    <span className="w-2 h-2 rounded-full bg-green-500 inline-block mr-3 animate-pulse"></span>
+                    <span className="text-sm font-mono tracking-widest">SYSTEM ONLINE</span>
                   </div>
 
                   <a
                     href="/skill.md"
                     download
-                    className="inline-flex items-center gap-2 px-6 py-2 border border-acid-lime text-acid-lime rounded-full hover:bg-acid-lime/10 transition-colors uppercase font-mono tracking-widest text-sm group"
+                    className="w-64 flex items-center justify-center gap-2 px-6 py-2 border border-acid-lime text-acid-lime rounded-full hover:bg-acid-lime/10 transition-colors uppercase font-mono tracking-widest text-sm group"
                   >
                     <Download className="w-4 h-4 group-hover:animate-bounce" />
                     SKILL.md
